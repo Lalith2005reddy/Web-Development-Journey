@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color with variables</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        :root{
+            --base: rgb(136, 202, 143);
+            --fontcolor: rgb(42, 41, 41);
+            --sitebase: rgb(191, 197, 192);
+        }
+        body{
+            background-color: var(--sitebase);
+        }
+        ul{
+            background-color: var(--base);
+            padding: 20px;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 30px;
+            font-size: 20px;
+            color: var(--fontcolor);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        /* ul{
+            display: flex;
+        } */
+    </style>
+</head>
+<body>
+    <div class="body">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About Me</li>
+                <li>Info</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
