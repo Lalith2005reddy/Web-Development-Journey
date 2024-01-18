@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: yellow;
+        }
+        .anim{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: box;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+            animation-delay: 0.5s;
+
+
+           /*animation-name: box2;*/
+        }
+        /*@keyframes box2 {
+            0%{
+
+            }
+            50%{
+
+            }
+            100%{
+
+            }
+        }*/
+        @keyframes box {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="anim">
+            This is a Website
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Lists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #kal{
+            background-color: aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        fon,oi{
+            color: purple;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ordered and Unordered Lists -->
+    <ul type="square" id="fon">
+        <li>unordered lists only contain bullets</li>
+        <li>unordered lists only contain bullets</li>
+        <li>unordered lists only contain bullets</li>
+        <ul type="disc" id="lh">
+            <li>Nested Lists</li>
+            <li>Nested Lists</li>
+            <li>Nested Lists</li>
+        </ul>
+
+    </ul>
+
+    <ol type="I" id="oi">
+        <li>ordered lists contain many types</li>
+        <li>ordered lists contain many types</li>
+        <li>ordered lists contain many types</li>
+    </ol>
+    <form action="backend.php">
+        <div> Name: <input type="text"></div>
+        <br>
+        <div> Are you Eligible: <input type="checkbox" name="age"></div>
+        <div> Age: <input type="number" name="age_num"></div>
+        <div><input type="submit" name="sub" id="kal">
+            <input type="reset" value="Reset Now" name="reset">
+            <input type="button" value="Button">
+        </div>
+        <br>
+        <div><input type="text" name="username" placeholder="Enter your username"></div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <div>
+            Fruits: <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana" selected>Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tempora.</p>
+</body>
+
+</html>

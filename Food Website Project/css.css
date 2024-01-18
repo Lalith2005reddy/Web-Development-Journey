@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+   
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px;
+}
+#logo img{
+    margin: 3px 5px;
+}
+ul{
+    display: flex;
+}
+.items{
+    margin-left: 30px;
+}
