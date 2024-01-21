@@ -15,6 +15,9 @@
             padding: 20px;
             border-radius: 15px;
             position: sticky;
+            top: 0;
+            width:98%;
+            z-index: 100;
         }
         body{
             background-color: var(--sitebase);
@@ -29,7 +32,30 @@
         }
         .sections div{
             display: inline-block;
-            margin-right: 10px;
+            margin: 100px;
+        }
+        .text{
+            width: 600px;
+            font-size: 25px;
+        }
+        #section2{
+            margin-left: 40px;
+            border: 0px;
+        }
+        .textbox{
+            background-color: rgb(120, 114, 126);
+            height: 400px;
+            border-radius: 40px;
+
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 75px;
+            align-items: center;
+            height: 25rem;
+            color: azure;
         }
     </style>
 </head>
@@ -44,15 +70,17 @@
             </ul>
         </nav>
         <div class="sections">
-            <div>
-                <img src="https://images.pexels.com/photos/19867915/pexels-photo-19867915/free-photo-of-a-seagull-flying-over-the-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="400px" height="250">
+            <div id="section1">
+                <img src="https://images.pexels.com/photos/19867915/pexels-photo-19867915/free-photo-of-a-seagull-flying-over-the-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="650px" height="500px">
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro atque, omnis maiores dolorum sunt sed voluptatum ipsum reiciendis explicabo totam? In consectetur quia rem ex eligendi ipsam soluta nesciunt quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam temporibus quia earum eius laborum, quis a iusto suscipit cupiditate? Sapiente?</p>
             </div>
-            <div>
-                <img src="https://images.pexels.com/photos/1543422/pexels-photo-1543422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="400px" height="250px">
+            <div id="section2">
+                <img src="https://images.pexels.com/photos/1543422/pexels-photo-1543422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="650px" height="500px">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maiores pariatur eum expedita possimus magni velit similique. Alias, ab? Ullam, amet impedit excepturi labore vero magnam magni ipsa deserunt illum quae repudiandae quisquam nulla ex totam corrupti rem explicabo facilis quas mollitia odit dolor suscipit?</p>
             </div>
         </div>
         <div class="textbox">
-            
+            <h1 class="heading">Welcome to My Site Design</h1>
         </div>
         <div class="icon">
 
