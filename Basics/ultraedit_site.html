@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar site</title>
     <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            margin-bottom: 50px;
+        }
         nav{
             display: flex;
             justify-content: center;
@@ -27,7 +33,42 @@
             list-style: none;
             gap: 40px;
             align-items: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .downloads{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 'head head'
+                                 'but1 but2';
+            width: 250px;
+            height: 150px;
+            background-color: rgb(225, 217, 217);
+            box-shadow: 5px 5px 10px red;
+            place-content: center;
+        }
+        
+        .downloads button{
+            background-color: rgb(117, 208, 140);
+            border-radius: 10px;
+            height: 30px;
+            grid-area: but;
+            cursor: pointer;
+        }
+        #bu1{
+            grid-area: but1;
+            background-color: rgb(172, 233, 233);
+        }
+        #bu2{
+            grid-area: but2;
+        }
+        .downloads h2{
+            grid-area: head;
+            text-align: center;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 270px 270px 270px;
+            justify-content: center;
+            gap: 40px;
         }
     </style>
 </head>
@@ -48,7 +89,52 @@
         </nav>
     </header>
     <main>
-
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        <div class="downloads">
+            <h2>English</h2>
+            <button id="bu1">Download 32bit</button>
+            <button id="bu2">Download 64bit</button>
+        </div>
+        
     </main>
     <footer>
 
