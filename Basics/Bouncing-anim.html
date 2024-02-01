@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            position: relative;
+            background-color: blue;
+            width: 1000px;
+            height: 752px;
+        }
+        .ball{
+            width: 121px;
+            height: 121px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(255, 0, 0);
+            border-radius: 70px;
+            animation: animateX 4s linear infinite,animateY 2s linear infinite alternate;
+        }
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80%;
+            }
+        }
+        @keyframes animateY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
