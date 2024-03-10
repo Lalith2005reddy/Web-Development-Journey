@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(35, 33, 33);
+}
+.container{
+    width: 700px;
+    height: 150px;
+    color: aliceblue;
+    border: 2px solid rgb(86, 80, 80);
+    display: flex;
+    align-items: center;
+}
+#Ytimage{
+    border-radius: 10px;
+}
+
+.text p{
+    padding: 2px;
+}
