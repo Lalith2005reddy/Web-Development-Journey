@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-grid{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+        .grid-ex2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+        .yt-vid{
+            display: grid;
+            grid-template-rows: 150px 50px 30px 20px;
+            margin-top: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-grid">
+        <div style="background-color: aqua; padding: 5px;">
+            200px
+        </div>
+        <div style="background-color: rgb(173, 173, 87); padding: 5px;">
+            75px
+        </div>
+    </div>
+
+    <div class="grid-ex2">
+        <div style="background-color: aquamarine;">
+            col1
+        </div>
+        <div style="background-color: aquamarine;">
+            col2
+        </div>
+        <div style="background-color: aquamarine;">
+            col3
+        </div>
+        <div style="background-color: aquamarine;">
+            col4
+        </div>
+        <div style="background-color: aquamarine;">
+            col1
+        </div>
+        <div style="background-color: aquamarine;">
+            col2
+        </div>
+        <div style="background-color: aquamarine;">
+            col3
+        </div>
+        <div style="background-color: aquamarine;">
+            col4
+        </div>
+    </div>
+
+    <div class="yt-vid">
+        <div style="background-color: aquamarine;">
+            col3
+        </div>
+        <div style="background-color: rgb(190, 208, 204);">
+            Name of Channel
+        </div>
+        <div style="background-color: rgb(124, 108, 189);">
+            col3
+        </div>
+        <div style="background-color: rgb(83, 135, 117);">
+            <button>Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
