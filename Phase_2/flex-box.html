@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .Flex-Cont{
+            display: flex;
+            border: 1px solid;
+            justify-content: space-between;
+        }
+        .items{
+            border: 1px solid;
+            height: 30px;
+        }
+        .Headerr{
+            display: flex;
+            background-color: rgb(86, 162, 137);
+            justify-content: space-between;
+            margin-bottom: 30px;
+            height: 30px;
+        }
+        .Left{
+            margin-left: 10px;
+            font-family: "Roboto",sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .Right{
+            font-family: sans-serif;
+            margin-right: 10px;
+        }
+        .Centre,.Right,.Left{
+            align-content: center;
+        }
+        #search-box{
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Headerr">
+        <div class="Left">
+            Home
+        </div>
+        <div class="Centre">
+            <input type="text" placeholder="Search" id="search-box">
+        </div>
+        <div class="Right">
+            <button style="font-size: 15px;border-radius: 5px;">Download</button>
+        </div>
+    </div>
+
+
+    <div class="Flex-Cont">
+        <div class="items">
+            item 1
+        </div>
+        <div class="items">
+            item 2
+        </div>
+    </div>
+</body>
+</html>
