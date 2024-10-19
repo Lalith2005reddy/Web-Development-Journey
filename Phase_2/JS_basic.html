@@ -22,14 +22,25 @@
     score.Win=0;
     score.Lose=0;
     score.Tie=0;
+    localStorage.removeItem('score');
     ">Reset</button>
 </body>
 <script>
-    const score = {
-        Win : 0,
-        Lose : 0,
-        Tie : 0
+    let score = JSON.parse(localStorage.getItem('score')) || {
+            Win: 0,
+            Lose: 0,
+            Tie: 0
+        };
+
+        /*
+    if(score===null){
+        score = {
+            Win: 0,
+            Lose: 0,
+            Tie: 0
+        }
     }
+*/
     function compfun(){
         const rand = Math.random();
         let compmove = '';
@@ -93,6 +104,9 @@
         else if(result === 'Tie'){
             score.Tie++;
         }
+
+        localStorage.setItem('score',JSON.stringify(score));
+
         alert(`Your Move is ${usermove}. Computer Move is ${compmove} .Result is ${result}
         Wins: ${score.Win}, Loses: ${score.Lose}, Ties: ${score.Tie}`);
     }

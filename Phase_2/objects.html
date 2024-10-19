@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="butt1">Test</button>
+
+    <p>Subscribe Button Project</p>
+    <button class="js-sub-button" onclick="
+    subscribe();
+    ">  Subscribe  </button>
+</body>
+<script>
+    function subscribe(){
+        const subbutton = document.querySelector('.js-sub-button');
+
+    if(subbutton.innerText === 'Subscribe'){
+        subbutton.innerHTML = 'Subscribed';
+    }
+    else{
+        subbutton.innerHTML = 'Subscribe';
+    }
+    }
+    /*
+    const obj1 = {
+        name: 'ABC',
+        str: 'stringold',
+        funw: function testfun(){
+            console.log("Displayed Success");
+        }
+    }*/
+    /*console.log(obj1);
+    console.log(typeof obj1.funw);
+    obj1.funw();
+
+    /*JavaScript to JSON*/
+    /*const jsonobj = JSON.stringify(obj1)
+    console.log(jsonobj);
+
+    JSON to Javascript object
+    console.log(JSON.parse(jsonobj));*/
+
+
+</script>
+</html>
