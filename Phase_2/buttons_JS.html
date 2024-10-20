@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .css-but1{
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button class="js-but1" onclick="butt1();">Gaming</button>
+</body>
+<script>
+    function butt1(){
+        if(document.querySelector('.js-but1').classList.contains('css-but1')){
+            document.querySelector('.js-but1').classList.remove('css-but1');
+        }
+        else{
+            document.querySelector('.js-but1').classList.add('css-but1');
+        }
+    }
+</script>
+</html>

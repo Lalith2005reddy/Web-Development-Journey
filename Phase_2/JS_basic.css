@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.Heading{
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.img-shape{
+    width: 70px;
+}
+
+.button-shape{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 63px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.css-result-para{
+    font-weight: bold;
+    font-size: large;
+}

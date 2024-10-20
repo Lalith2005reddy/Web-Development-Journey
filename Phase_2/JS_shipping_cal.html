@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Charge calculator</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .css-cal-button{
+        background-color: rgb(25, 25, 25);
+        color: white;
+        padding: 11px 15px;
+        border: 1px solid red;
+        font-weight: bold;
+    }
+    input{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .css-cal-button-after{
+        background-color: white;
+        color: black;
+    }
+</style>
+<body>
+    <p>Amazon Shipping calculator</p>
+    <p>Order <=$40 +$10 charge</p>
+    <p>Order >40 No charge</p>
+    <input type="text" placeholder="Cost" class="js-inputted" onkeydown="
+    HandleCostKeydown(event);
+    ">
+    <button class="js-cal-button css-cal-button" onclick="
+    costcal();
+    ButtonChange();
+    ">Calculate</button>
+    <p class="js-result"></p>
+</body>
+<script>
+    function ButtonChange(){
+        document.querySelector('.js-cal-button').classList.add('css-cal-button-after')
+    }
+    function costcal(){
+        const costobj= document.querySelector('.js-inputted');
+        let cost = Number(costobj.value);
+        if(cost <= 40){
+            cost+=10;
+        }
+        document.querySelector('.js-result')
+            .innerHTML = `$${cost}`;
+    }
+
+    function HandleCostKeydown(event){
+        if(event.key === 'Enter'){
+        costcal();
+    }
+    }
+</script>
+</html>
