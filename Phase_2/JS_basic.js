@@ -29,6 +29,21 @@ score = {
 }
 }
 */
+//AutoPLay Function
+let isautoplaying = false;
+let intervalid;
+function autoplay(){
+    if(!isautoplaying){
+        intervalid = setInterval(function(){
+            playgame(compfun())
+        },1000);
+        isautoplaying = true;
+    }
+    else{
+        clearInterval(intervalid);
+        isautoplaying = false;
+    }
+}
 function compfun(){
 const rand = Math.random();
 let compmove = '';

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-button" onclick="
+    finishFunction();
+    ">Start</button>
+    <p class="js-msg"></p>
+</body>
+<script>
+    let clicked = false;
+    function finishFunction(){
+        if(!clicked){
+            let message = document.querySelector('.js-msg');
+            message.innerHTML = "Added";
+            setTimeout(function(){
+            let button = document.querySelector('.js-button');
+            button.innerHTML = "Finished";
+            message.innerHTML = "";
+            clicked = true;
+        },2000)
+        }
+        else{
+            let button = document.querySelector('.js-button');
+            button.innerHTML = "Start";
+        }
+    }
+</script>
+</html>
