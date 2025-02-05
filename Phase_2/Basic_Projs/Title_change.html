@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message App</title>
+</head>
+<body>
+    <p>Message App</p>
+</body>
+<script>
+    setInterval(function(){
+        document.title = "APP";
+    },2000);
+    document.title = "Message App";
+
+    const arr = [1,2,3];
+    const b = 2;
+    addNum(arr,b);
+    //Exercise
+    function addNum(arr,b){
+        console.log(arr.map((value,index)=>{
+            return value+b;
+        }))
+    }
+    console.log(arr);
+
+</script>
+
+</html>
